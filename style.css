@@ -1,0 +1,101 @@
+/* Seletor universal/global: Utilizamos esse seletor quando queremos aplicar uma
+ ou mais propriedades a todos os elementos da página */
+
+* {
+
+  /* margin - controla a o espaçamento fora do elemento */
+  margin: 0;
+
+  /* padding - controla o espaçamento dentro do elemnto */
+  padding: 0;
+
+
+  html,
+  bady {
+    height: 100%;
+  }
+}
+
+body {
+  min-height: 100vh;
+
+  background: linear-gradient(#4E13B4, #0C001E);
+  font-family: "Syne", "sans-serif";
+
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 125px;
+}
+
+/* group seletor - é quando agrupamos elementos diferentes, 
+separados por virgula, que receberam a mesma propriedade */
+h1,
+p {
+  color: #FFFFFF;
+}
+
+h1 {
+  /* font-size - controla o tamanho do texto */
+  font-size: 32px;
+  /* font-weight - controla o peso da fonte */
+  font-weight: 400;
+  /* text-transform - serve para deixar letras maiúsculas, minúsculas,  ou com a primeira letra de cada palavra maiúscula. */
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+
+}
+
+li {
+  list-style: none;
+  margin-bottom: 14px;
+}
+
+a {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  color: #0DABE0;
+  border-radius: 16px;
+
+  font-weight: 700px;
+
+  height: 48px;
+  width: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Colocar o id para alterar as cores da fonte dos botões individualmente. */
+#intsgram {
+  color: #EB578B;
+
+}
+
+/* validar para quê serve -
+
+section {
+  border: 4px solid #0C001E;
+  padding-top: 20px;
+  margin-top: 40px;
+
+} */
+
+section {
+
+ 
+}
