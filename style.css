@@ -114,7 +114,7 @@ a {
 
 a:hover{
   /* Adicionar animação de cor nos botões, a fim de mostrar ao usuário que o recurso é clicável. Conhecido com "pseudo-classe. */
-  /* background-color: #3B0EA4; */
+   background-color: #7160f0; 
 }
 
 
@@ -143,6 +143,3 @@ section {
 
 } */
 
-section {
-
-}
