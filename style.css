@@ -11,27 +11,39 @@
 
 
   html,
-  bady {
+  body {
     height: 100%;
   }
+
+  /* O "height" significa, ocupe 100% da altura disponível  */
 }
 
 body {
+  /* Para garantir que o fundo ocupe toda a tela. */
   min-height: 100vh;
 
-  background: linear-gradient(#4E13B4, #0C001E);
+  background: linear-gradient(#3B0EA4, #0C001E);
   font-family: "Syne", "sans-serif";
 
   display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+/* Nos ajuda a organizar os elementos de forma simples. */
+
+  flex-direction: column;
+  /* "column" Organize os itens em coluna. */
+
+  align-items: center;
+  /* "center" Centraliza na horizontal. */
+
+  justify-content: center;
+  /* Centraliza na vertical. */
 }
 
 img {
   width: 250px;
   height: 250px;
   object-fit: cover;
+  /* É como encaixar uma foto numa moldura. Se a foto for diferente do tamanho, Ela corta as partes que sobram. */
+
   border-radius: 125px;
 }
 
@@ -40,37 +52,57 @@ separados por virgula, que receberam a mesma propriedade */
 h1,
 p {
   color: #FFFFFF;
+  text-align: center;
+  /* Elemento para centralizar o texto na tela */
 }
 
 h1 {
-  /* font-size - controla o tamanho do texto */
   font-size: 32px;
-  /* font-weight - controla o peso da fonte */
+  /* font-size - controla o tamanho da letra */
+
   font-weight: 400;
-  /* text-transform - serve para deixar letras maiúsculas, minúsculas,  ou com a primeira letra de cada palavra maiúscula. */
+  /* font-weight - controla a Espessura da letra: 100 → fininha; 400 → normal; 700 → grossa */
+
   text-transform: uppercase;
+  /* text-transform - serve para deixar letras maiúsculas, minúsculas,  ou com a primeira letra de cada palavra maiúscula. Dependendo do elemento usado dentro dele */
+
   margin-top: 16px;
-  margin-bottom: 8px;
+  /* Cria espaço acima. */
 }
 
 p {
   font-size: 20px;
   font-weight: 200;
 
+  margin-top: 5px;
+  /* Espaço acima. */
+
+  margin-bottom: 8px;
+  /* Espaço abaixo. */
+
+  max-width: 20ch;
+  /* "Limitando o paragrafo a caracteres específico", usamos ele para quebrar o texto em duas linhas. */
+
+  margin-left: auto;
+/* Quando usamos o max-width o texto não fica estruturado centralmente, então usamos o "margin-left" e "margin-right" para configurar ele no centro e deixá-lo responsivo */
+margin-right: auto
+;
+
 }
 
 li {
   list-style: none;
+  /* Remove bolinha */
+
   margin-bottom: 14px;
 }
 
 a {
   background-color: rgba(255, 255, 255, 0.3);
   text-decoration: none;
-  color: #0DABE0;
   border-radius: 16px;
 
-  font-weight: 700px;
+  font-weight: 700;
 
   height: 48px;
   width: 300px;
@@ -80,10 +112,26 @@ a {
   justify-content: center;
 }
 
-/* Colocar o id para alterar as cores da fonte dos botões individualmente. */
-#intsgram {
-  color: #EB578B;
+a:hover{
+  /* Adicionar animação de cor nos botões, a fim de mostrar ao usuário que o recurso é clicável. Conhecido com "pseudo-classe. */
+  /* background-color: #3B0EA4; */
+}
 
+
+
+
+
+/* Colocar o id para alterar as cores da fonte dos botões individualmente. */
+#linkedin {
+  color: #0DABE0;
+}
+
+#instagram {
+  color: #EB578B;
+}
+
+#github {
+  color: rgb(241, 255, 255);
 }
 
 /* validar para quê serve -
@@ -97,5 +145,4 @@ section {
 
 section {
 
- 
 }
